@@ -22,7 +22,19 @@ const router = createRouter({
       name: 'usuarios',
       component: () => import('../components/TablaUsuarios.vue'), // 👈 Nueva ruta
     },
+    {
+      path: '/roles',
+      name: 'roles',
+      component: () => import('../components/TablaRoles.vue'), // 👈 Nueva ruta
+    },
+    {
+      path: '/dashboard',
+      name: 'dashboard',
+      component: () => import('../components/Dashboard.vue'), // 👈 Nueva ruta
+    },
   ],
 })
 
 export default router
+
+

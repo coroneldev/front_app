@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import { quasar, transformAssetUrls } from '@quasar/vite-plugin'
 
+
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
@@ -14,6 +15,8 @@ export default defineConfig({
     vueDevTools(),
     quasar({
       //sassVariables: 'src/quasar-variables.sass' // 👈 opcional, puedes omitir si no personalizas
+  
+      
     })
   ],
   resolve: {
